@@ -7,12 +7,15 @@ import com.zundrel.conveyance.client.renderers.VerticalConveyorBlockEntityRender
 import com.zundrel.conveyance.common.registries.ConveyanceBlockEntities;
 import com.zundrel.conveyance.common.registries.ConveyanceBlocks;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.rendereregistry.v1.BlockEntityRendererRegistry;
 import net.minecraft.client.render.block.entity.BlockEntityRenderDispatcher;
 import net.minecraft.client.util.ModelIdentifier;
 import net.minecraft.util.Identifier;
 
+@Environment(EnvType.CLIENT)
 public class ConveyanceClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
